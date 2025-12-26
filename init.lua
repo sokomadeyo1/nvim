@@ -16,6 +16,9 @@ vim.o.number = true
 -- option above, see `:h number_relativenumber`
 vim.o.relativenumber = true
 
+-- йцукенгшщзхъ
+vim.o.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz"
+
 -- -- Sync clipboard between OS and Neovim. Schedule the setting after `UiEnter` because it can
 -- -- increase startup-time. Remove this option if you want your OS clipboard to remain independent.
 -- -- See `:help 'clipboard'`
