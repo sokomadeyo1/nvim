@@ -18,12 +18,24 @@ vim.o.langmap = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJ
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+-- Visuals
+-- colorscheme
+vim.cmd("colorscheme dracula")
 -- Highlight the line where the cursor is on
--- TODO: make pretty
 vim.o.cursorline = true
+vim.cmd("hi clear CursorLine")
+vim.cmd("hi CursorLine gui=underline cterm=underline")
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10
 
 -- Show <tab> and trailing spaces
 vim.o.list = true
+
+-- Indentation
+vim.o.shiftwidth = 4     -- operation >> indents 4 columns; << unindents 4 columns
+vim.o.tabstop = 4        -- a hard TAB displays as 4 columns
+vim.o.expandtab = true   -- insert spaces when hitting TABs
+vim.o.softtabstop = 4    -- insert/delete 4 spaces when hitting a TAB/BACKSPACE
+vim.o.shiftround = true  -- round indent to multiple of 'shiftwidth'
+vim.o.autoindent = true  -- align the new line indent with the previous line

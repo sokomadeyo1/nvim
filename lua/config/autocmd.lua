@@ -1,12 +1,21 @@
--- [[ Autocommands ]].
--- See `:h lua-guide-autocommands`, `:h autocmd`, `:h nvim_create_autocmd()`
+-- NOTE: autocommands
 
--- Highlight when yanking (copying) text.
--- Try it with `yap` in normal mode. See `:h vim.hl.on_yank()`
-vim.api.nvim_create_autocmd('TextYankPost', {
+local autocmd = vim.api.nvim_create_autocmd
+
+-- Highlight when yanking
+autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   callback = function()
     vim.hl.on_yank()
   end,
 })
 
+autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    -- Disable comment on new line
+    vim.opt.formatoptions:remove { "c", "r", "o" }
+  end,
+  group = general,
+  desc = "Disable New Line Comment",
+})
