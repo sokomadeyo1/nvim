@@ -1,8 +1,3 @@
--- Set <space> as the leader key
--- See `:help mapleader`
--- NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-
 -- [[ Setting options ]] See `:h vim.o`
 -- NOTE: You can change these options as you wish!
 -- For more options, you can see `:help option-list`
@@ -24,6 +19,7 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Highlight the line where the cursor is on
+-- TODO: make pretty
 vim.o.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
@@ -31,7 +27,3 @@ vim.o.scrolloff = 10
 
 -- Show <tab> and trailing spaces
 vim.o.list = true
-
--- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
--- instead raise a dialog asking if you wish to save the current file(s) See `:help 'confirm'`
-vim.o.confirm = true
