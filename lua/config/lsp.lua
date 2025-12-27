@@ -34,18 +34,21 @@ vim.lsp.config('pylsp', {
         },
         pylint = {
           enabled = true,
+        },
+        pycodestyle = {
+          enabled = false,
         }
       }
     }
   }
 })
 
-vim.lsp.config('ruff', {
-  init_options = {
-    settings = {
-      --
-    }
-  }
-})
+-- vim.lsp.config('ruff', {
+--   init_options = {
+--     settings = {
+--       --
+--     }
+--   }
+-- })
 
 vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff' })

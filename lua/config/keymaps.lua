@@ -53,5 +53,6 @@ map({ "n", "v", "x" }, "<leader>y", '"+y', "Yank to system clipboard")
 map({ "n", "v", "x" }, "<leader>d", '"+d', "Delete to system clipboard")
 map({ "n", "v", "x" }, "<leader>p", '"+p', "Paste form system clipboard")
 
--- Lint
-map("n", "<leader>lp", ":!pylint %<CR>", "Lint python file")
+-- Diagnostics and symbols
+map("n", "<leader>vd", ":Trouble diagnostics toggle focus=true<CR>", "View diagnostics")
+map("n", "<leader>vs", ":Trouble symbols toggle<CR>", "View symbols")

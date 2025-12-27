@@ -16,7 +16,6 @@ Plug('folke/which-key.nvim')                      --mappings popup
 Plug('romgrk/barbar.nvim')                        --bufferline
 Plug('nvim-tree/nvim-tree.lua')                   --file explorer
 Plug('windwp/nvim-autopairs')                     --autopairs
-Plug('ibhagwan/fzf-lua')                          --fzf
 Plug('lewis6991/gitsigns.nvim')                   --git
 Plug('lukas-reineke/virt-column.nvim')            --colorcolumn
 Plug('folke/todo-comments.nvim')                  --todo-comments
@@ -25,6 +24,7 @@ Plug('norcalli/nvim-colorizer.lua')               --color highlight
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim')             --view csv files
 Plug('neovim/nvim-lspconfig')                     --lsp
+Plug('folke/trouble.nvim')                        --diagnostics
 
 vim.call('plug#end')
 
@@ -43,3 +43,4 @@ require('plugins.autopairs')
 require('plugins.whichkey')
 require('plugins.virtcolumn')
 require('plugins.nvim-tree')
+require('plugins.trouble')
