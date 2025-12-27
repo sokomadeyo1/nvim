@@ -19,3 +19,21 @@ autocmd("FileType", {
   group = general,
   desc = "Disable New Line Comment",
 })
+
+-- 2-space indentation for lua
+autocmd("FileType", {
+  pattern = "lua",
+  callback = function()
+    vim.opt.sw = 2
+    vim.opt.tabstop = 2
+		vim.opt.expandtab = true
+  end,
+})
+
+-- Enable treesitter highlighting
+autocmd('FileType', {
+  pattern = "python",
+  callback = function()
+    vim.treesitter.start()
+  end,
+})

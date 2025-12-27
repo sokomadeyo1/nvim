@@ -24,6 +24,7 @@ Plug('norcalli/nvim-colorizer.lua')               --color highlight
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim')             --view csv files
 Plug('neovim/nvim-lspconfig')                     --lsp
+Plug('nvim-treesitter/nvim-treesitter')           --better syntax highlighting
 Plug('folke/trouble.nvim')                        --diagnostics
 
 vim.call('plug#end')
@@ -43,4 +44,5 @@ require('plugins.autopairs')
 require('plugins.whichkey')
 require('plugins.virtcolumn')
 require('plugins.nvim-tree')
+require('plugins.nvim-treesitter')
 require('plugins.trouble')
