@@ -1,7 +1,23 @@
 local wk = require("which-key")
 wk.add({
+  { "]c", desc = "next change" },
+  { "[c", desc = "prev change" },
   { "<leader>s", desc = "split" },
   { "<leader>R", desc = "reload config" },
   { "<leader>l", desc = "lint" },
   { "<leader>v", desc = "view" },
+  { "<leader>h", desc = "hunk actions" },
+  { "<leader>hs", desc = "stage hunk" },
+  { "<leader>hr", desc = "reset hunk" },
+  { "<leader>hS", desc = "stage buffer" },
+  { "<leader>hR", desc = "reset buffer" },
+  { "<leader>hp", desc = "preview hunk" },
+  { "<leader>hi", desc = "preview hunk inline" },
+  { "<leader>hb", desc = "blame line" },
+  { "<leader>hd", desc = "diff against staged" },
+  { "<leader>hD", desc = "diff against HEAD" },
+  { "<leader>hq", desc = "Quickfix list current buffer hunks" },
+  { "<leader>hQ", desc = "Quickfix list repo hunks" },
+  { "<leader>htb", desc = "toggle blame line" },
+  { "<leader>htw", desc = "toggle word diff" },
 })
