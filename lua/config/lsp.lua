@@ -16,11 +16,36 @@ vim.diagnostic.config({
 })
 
 -- lua
-vim.lsp.config['lua_ls'] = {
+vim.lsp.config('lua_ls', {
   -- Command and arguments to start the server.
   cmd = { 'lua-language-server' },
 
   -- Filetypes to automatically attach to.
   filetypes = { 'lua' },
-}
-vim.lsp.enable({ 'lua_ls', 'ruff' })
+})
+
+-- python
+vim.lsp.config('pylsp', {
+  settings = {
+    pylsp = {
+      plugins = {
+        autopep8 = {
+          enabled = false,
+        },
+        pylint = {
+          enabled = true,
+        }
+      }
+    }
+  }
+})
+
+vim.lsp.config('ruff', {
+  init_options = {
+    settings = {
+      --
+    }
+  }
+})
+
+vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff' })

@@ -19,10 +19,3 @@ autocmd("FileType", {
   group = general,
   desc = "Disable New Line Comment",
 })
-
--- Lint on write
-autocmd("BufWritePost", {
-  callback = function()
-    require("lint").try_lint()
-  end,
-})

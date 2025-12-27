@@ -30,6 +30,8 @@ vim.cmd("colorscheme retrobox")
 vim.o.cursorline = true
 vim.cmd("hi clear CursorLine")
 vim.cmd("hi CursorLine gui=underline cterm=underline")
+-- window borders
+vim.o.winborder = "rounded"
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.o.scrolloff = 10

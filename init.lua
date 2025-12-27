@@ -22,7 +22,6 @@ Plug('lukas-reineke/virt-column.nvim')            --colorcolumn
 Plug('folke/todo-comments.nvim')                  --todo-comments
 Plug('numToStr/Comment.nvim')                     --easier comments
 Plug('norcalli/nvim-colorizer.lua')               --color highlight
-Plug('mfussenegger/nvim-lint')                    --async linter
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim')             --view csv files
 Plug('neovim/nvim-lspconfig')                     --lsp
