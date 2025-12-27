@@ -9,7 +9,7 @@ vim.o.number = true
 
 -- Use relative line numbers, so that it is easier to jump with j, k. This will affect the 'number'
 -- option above, see `:h number_relativenumber`
-vim.o.relativenumber = true
+-- vim.o.relativenumber = true
 
 vim.o.signcolumn = "yes"
 
@@ -21,9 +21,11 @@ vim.o.langmap =
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
--- Visuals
+---- Visuals
+vim.o.termguicolors = true
 -- colorscheme
-vim.cmd("colorscheme dracula")
+-- vim.cmd("colorscheme dracula")
+vim.cmd("colorscheme retrobox")
 -- Highlight the line where the cursor is on
 vim.o.cursorline = true
 vim.cmd("hi clear CursorLine")
