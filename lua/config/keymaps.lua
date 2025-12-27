@@ -51,7 +51,7 @@ map("n", "<leader>f", vim.lsp.buf.format, 'Format buffer')
 -- System clipboard
 map({ "n", "v", "x" }, "<leader>y", '"+y', "Yank to system clipboard")
 map({ "n", "v", "x" }, "<leader>d", '"+d', "Delete to system clipboard")
-map({ "n", "v", "x" }, "<leader>p", '"+p', "Paste form system clipboard")
+map({ "n", "v", "x" }, "<leader>p", '"+p', "Paste from system clipboard")
 
 -- Diagnostics and symbols
 map("n", "<leader>vd", ":Trouble diagnostics toggle focus=true<CR>", "View diagnostics")
