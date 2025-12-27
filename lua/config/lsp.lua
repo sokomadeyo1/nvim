@@ -15,15 +15,6 @@ vim.diagnostic.config({
   }
 })
 
--- lua
-vim.lsp.config('lua_ls', {
-  -- Command and arguments to start the server.
-  cmd = { 'lua-language-server' },
-
-  -- Filetypes to automatically attach to.
-  filetypes = { 'lua' },
-})
-
 -- python
 vim.lsp.config('pylsp', {
   settings = {
