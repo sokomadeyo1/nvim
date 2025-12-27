@@ -11,10 +11,10 @@ vim.g.maplocalleader = " "
 -- buffers
 map("n", "<S-l>", ":bnext<CR>")
 map("n", "<S-h>", ":bprevious<CR>")
-map("n", "<leader>q", ":BufferClose<CR>")
-map("n", "<leader>Q", ":BufferClose!<CR>")
-map("n", "<leader>U", "::bufdo bd<CR>")         --close all
-map('n', '<leader>vs', ':vsplit<CR>:bnext<CR>') --ver split + open next buffer
+map("n", "<leader>q", ":BufferClose<CR>", "close buf")
+map("n", "<leader>Q", ":BufferClose!<CR>", "close buf!")
+map('n', '<leader>sv', ':vsplit<CR>:bnext<CR>', "vertical split")  --ver split + open next buffer
+map('n', '<leader>sh', ':split<CR>:bnext<CR>', "horizontal split") --ver split + open next buffer
 
 -- buffer position nav + reorder
 map('n', '<AS-h>', '<Cmd>BufferMovePrevious<CR>')
@@ -47,3 +47,11 @@ map("n", "<leader>csA", ":lua require('decisive').align_csv_clear({})<cr>", "Und
 -- map("n", "]c", ":lua require('decisive').align_csv_next_col()<cr>")
 
 map("n", "<leader>f", vim.lsp.buf.format, 'Format buffer')
+
+-- System clipboard
+map({ "n", "v", "x" }, "<leader>y", '"+y', "Yank to system clipboard")
+map({ "n", "v", "x" }, "<leader>d", '"+d', "Delete to system clipboard")
+map({ "n", "v", "x" }, "<leader>p", '"+p', "Paste form system clipboard")
+
+-- Lint
+map("n", "<leader>lp", ":!pylint %<CR>", "Lint python file")

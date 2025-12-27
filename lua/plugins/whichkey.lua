@@ -1,6 +1,6 @@
 local wk = require("which-key")
 wk.add({
+  { "<leader>s", desc = "split" },
   { "<leader>R", desc = "reload config" },
-  { "<leader>q", desc = "close buf" },
-  { "<leader>Q", desc = "close buf!" },
+  { "<leader>l", desc = "lint" },
 })
