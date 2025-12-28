@@ -10,7 +10,12 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+-- Colorschemes
 Plug('mofiqul/dracula.nvim')
+Plug('shaunsingh/nord.nvim')
+Plug('rebelot/kanagawa.nvim')
+Plug('AlphaTechnolog/pywal.nvim')
+
 Plug('nvim-tree/nvim-web-devicons')
 Plug('folke/which-key.nvim')                      --mappings popup
 Plug('romgrk/barbar.nvim')                        --bufferline

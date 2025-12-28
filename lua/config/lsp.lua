@@ -1,6 +1,6 @@
 vim.diagnostic.config({
   virtual_text = false,
-  virtual_lines = true,
+  virtual_lines = false,
   signs = {
     text = {
       [vim.diagnostic.severity.ERROR] = ' ',
@@ -42,4 +42,4 @@ vim.lsp.config('pylsp', {
 --   }
 -- })
 
-vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff' })
+vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff', 'marksman', 'rumdl' })

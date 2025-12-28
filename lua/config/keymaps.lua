@@ -56,3 +56,12 @@ map({ "n", "v", "x" }, "<leader>p", '"+p', "Paste from system clipboard")
 -- Diagnostics and symbols
 map("n", "<leader>vd", ":Trouble diagnostics toggle focus=true<CR>", "View diagnostics")
 map("n", "<leader>vs", ":Trouble symbols toggle<CR>", "View symbols")
+
+-- Diagnostic virtual lines
+map("n", "<leader>od", function()
+  local new_config = not vim.diagnostic.config().virtual_lines
+  vim.diagnostic.config({ virtual_lines = new_config })
+end, "Toggle virtual line diagnostics")
+
+-- Lint
+map("n", "<leader>lp", ":!pylint %<CR>", "pylint")
