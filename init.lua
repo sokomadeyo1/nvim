@@ -15,11 +15,13 @@ Plug('mofiqul/dracula.nvim')
 Plug('shaunsingh/nord.nvim')
 Plug('rebelot/kanagawa.nvim')
 Plug('AlphaTechnolog/pywal.nvim')
+Plug('ellisonleao/gruvbox.nvim')
 
 Plug('nvim-tree/nvim-web-devicons')
 Plug('folke/which-key.nvim')                      --mappings popup
 Plug('romgrk/barbar.nvim')                        --bufferline
 Plug('nvim-tree/nvim-tree.lua')                   --file explorer
+Plug('nvim-lualine/lualine.nvim')                 --lualine
 Plug('windwp/nvim-autopairs')                     --autopairs
 Plug('lewis6991/gitsigns.nvim')                   --git
 Plug('lukas-reineke/virt-column.nvim')            --colorcolumn
@@ -45,6 +47,8 @@ require('plugins.comment')
 require('plugins.colorizer')
 require('plugins.gitsigns')
 require('plugins.todo-comments')
+require('plugins.lualine')
+require('plugins.render-markdown')
 require('plugins.autopairs')
 require('plugins.whichkey')
 require('plugins.virtcolumn')

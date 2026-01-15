@@ -25,7 +25,7 @@ vim.o.smartcase = true
 vim.o.termguicolors = true
 -- colorscheme
 -- vim.cmd("colorscheme dracula")
-vim.cmd("colorscheme retrobox")
+vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme nord")
 -- vim.cmd("colorscheme kanagawa-dragon")
 -- Highlight the line where the cursor is on
