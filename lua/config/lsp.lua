@@ -42,4 +42,4 @@ vim.lsp.config('pylsp', {
 --   }
 -- })
 
-vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff', 'marksman', 'rumdl', 'codebook', 'bashls' })
+vim.lsp.enable({ 'lua_ls', 'pylsp', 'ruff', 'marksman', 'rumdl', 'harper_ls', 'bashls', 'hls' })

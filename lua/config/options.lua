@@ -25,9 +25,10 @@ vim.o.smartcase = true
 vim.o.termguicolors = true
 -- colorscheme
 -- vim.cmd("colorscheme dracula")
-vim.cmd("colorscheme gruvbox")
+-- vim.cmd("colorscheme gruvbox")
 -- vim.cmd("colorscheme nord")
 -- vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme rose-pine")
 -- Highlight the line where the cursor is on
 vim.o.cursorline = true
 vim.cmd("hi clear CursorLine")

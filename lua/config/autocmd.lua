@@ -20,9 +20,9 @@ autocmd("FileType", {
   desc = "Disable New Line Comment",
 })
 
--- 2-space indentation for lua and markdown
+-- 2-space indentation
 autocmd("FileType", {
-  pattern = "lua,markdown",
+  pattern = "lua,markdown,haskell,lhaskell",
   callback = function()
     vim.opt.sw = 2
     vim.opt.tabstop = 2

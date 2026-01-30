@@ -16,6 +16,7 @@ Plug('shaunsingh/nord.nvim')
 Plug('rebelot/kanagawa.nvim')
 Plug('AlphaTechnolog/pywal.nvim')
 Plug('ellisonleao/gruvbox.nvim')
+Plug('rose-pine/neovim')
 
 Plug('nvim-tree/nvim-web-devicons')
 Plug('folke/which-key.nvim')                      --mappings popup
