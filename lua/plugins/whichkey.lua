@@ -2,6 +2,7 @@ local wk = require("which-key")
 wk.add({
   { "]c", desc = "next change" },
   { "[c", desc = "prev change" },
+  { "<leader><leader>", desc = "places" },
   { "<leader>s", desc = "split" },
   { "<leader>R", desc = "reload config" },
   { "<leader>l", desc = "lint" },

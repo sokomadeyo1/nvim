@@ -14,7 +14,7 @@ map("n", "<S-h>", ":bprevious<CR>")
 map("n", "<leader>q", ":BufferClose<CR>", "close buf")
 map("n", "<leader>Q", ":BufferClose!<CR>", "close buf!")
 map('n', '<leader>sv', ':vsplit<CR>:bnext<CR>', "vertical split")  --ver split + open next buffer
-map('n', '<leader>sh', ':split<CR>:bnext<CR>', "horizontal split") --ver split + open next buffer
+map('n', '<leader>sh', ':split<CR>:bnext<CR>', "horizontal split") --hor split + open next buffer
 
 -- buffer position nav + reorder
 map('n', '<AS-h>', '<Cmd>BufferMovePrevious<CR>')
@@ -32,13 +32,13 @@ map('n', '<A-0>', '<Cmd>BufferLast<CR>')
 map('n', '<A-p>', '<Cmd>BufferPin<CR>')
 
 -- misc
-map("n", "<leader>t", ":NvimTreeFocus<CR>", "Open file explorer")      --open file explorer
-map("n", "<leader>P", ":PlugInstall<CR>", "Install plugins")           --vim-plug
-map("n", "<leader>mv", ":!mv % ", "Rename buffer")                     --move a file to a new dir
-map("n", "<leader>R", ":so %<CR>", "Reload config")                    --reload neovim config
-map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>', "Open URL") --open a url under cursor
--- map("v", "<leader>i", "=gv") --auto indent
-map("n", "<leader>W", ":set wrap!<CR>", "Toggle wrap")                 --toggle wrap
+map("n", "<leader>t", ":NvimTreeFocus<CR>", "Open file explorer")         --open file explorer
+map("n", "<leader>P", ":PlugInstall<CR>", "Install plugins")              --vim-plug
+map("n", "<leader>mv", ":!mv % ", "Rename buffer")                        --move a file to a new dir
+map("n", "<leader>R", ":so ~/.config/nvim/init.lua<CR>", "Reload config") --reload neovim config
+map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>', "Open URL")    --open a url under cursor
+-- map("v", "<leader>i", "=gv")                                           --auto indent
+map("n", "<leader>W", ":set wrap!<CR>", "Toggle wrap")                    --toggle wrap
 
 -- decisive csv
 map("n", "<leader>csa", ":lua require('decisive').align_csv({})<cr>", "Align table")
@@ -65,3 +65,7 @@ end, "Toggle virtual line diagnostics")
 
 -- Lint
 map("n", "<leader>lp", ":!pylint %<CR>", "pylint")
+
+map("n", "<leader><leader>b", ":e ~/Bookmarks<CR>", "bookmarks")
+map("n", "<leader><leader>n", ":e ~/.config/nvim<CR>", "nvim config")
+map("n", "<leader><leader>t", ":e ~/Bookmarks/todo/current.md<CR>", "todo")
