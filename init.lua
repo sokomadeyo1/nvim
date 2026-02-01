@@ -18,9 +18,14 @@ Plug('AlphaTechnolog/pywal.nvim')
 Plug('ellisonleao/gruvbox.nvim')
 Plug('rose-pine/neovim')
 
+Plug('nvim-lua/plenary.nvim') --lua library for nvim
+
 Plug('nvim-tree/nvim-web-devicons')
 Plug('folke/which-key.nvim')                      --mappings popup
+Plug('stevearc/dressing.nvim')                    --ui
 Plug('romgrk/barbar.nvim')                        --bufferline
+Plug('goolord/alpha-nvim')                        --start menu
+Plug('Shatur/neovim-session-manager')             --sessions
 Plug('nvim-tree/nvim-tree.lua')                   --file explorer
 Plug('nvim-lualine/lualine.nvim')                 --lualine
 Plug('L3MON4D3/LuaSnip')                          --snippets
@@ -51,6 +56,8 @@ require('plugins.comment')
 require('plugins.colorizer')
 require('plugins.gitsigns')
 require('plugins.todo-comments')
+require('plugins.alpha')
+require('plugins.sessions')
 require('plugins.lualine')
 require('plugins.render-markdown')
 require('plugins.autopairs')
