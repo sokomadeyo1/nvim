@@ -8,6 +8,9 @@ map("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- clear pattern search highlight
+map("n", "<ESC>", ":noh<CR>")
+
 -- buffers
 map("n", "<S-l>", ":bnext<CR>")
 map("n", "<S-h>", ":bprevious<CR>")
@@ -36,7 +39,6 @@ map("n", "<leader>t", ":NvimTreeFocus<CR>", "Open file explorer")         --open
 map("n", "<leader>P", ":PlugInstall<CR>", "Install plugins")              --vim-plug
 map("n", "<leader>mv", ":!mv % ", "Rename buffer")                        --move a file to a new dir
 map("n", "<leader>R", ":so ~/.config/nvim/init.lua<CR>", "Reload config") --reload neovim config
-map("n", "<leader>u", ':silent !xdg-open "<cWORD>" &<CR>', "Open URL")    --open a url under cursor
 -- map("v", "<leader>i", "=gv")                                           --auto indent
 map("n", "<leader>W", ":set wrap!<CR>", "Toggle wrap")                    --toggle wrap
 
