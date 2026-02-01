@@ -23,6 +23,9 @@ Plug('folke/which-key.nvim')                      --mappings popup
 Plug('romgrk/barbar.nvim')                        --bufferline
 Plug('nvim-tree/nvim-tree.lua')                   --file explorer
 Plug('nvim-lualine/lualine.nvim')                 --lualine
+Plug('L3MON4D3/LuaSnip')                          --snippets
+Plug('rafamadriz/friendly-snippets')              --snippets collection
+-- see ~/.local/share/nvim/plugged/friendly-snippets/snippets
 Plug('windwp/nvim-autopairs')                     --autopairs
 Plug('lewis6991/gitsigns.nvim')                   --git
 Plug('lukas-reineke/virt-column.nvim')            --colorcolumn
@@ -51,6 +54,7 @@ require('plugins.todo-comments')
 require('plugins.lualine')
 require('plugins.render-markdown')
 require('plugins.autopairs')
+require('plugins.luasnip')
 require('plugins.whichkey')
 require('plugins.virtcolumn')
 require('plugins.nvim-tree')
