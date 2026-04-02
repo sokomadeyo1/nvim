@@ -22,7 +22,7 @@ autocmd("FileType", {
 
 -- 2-space indentation
 autocmd("FileType", {
-  pattern = "lua,markdown,haskell,lhaskell",
+  pattern = "lua,markdown,haskell,lhaskell,cpp",
   callback = function()
     vim.opt.sw = 2
     vim.opt.tabstop = 2

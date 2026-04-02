@@ -44,17 +44,23 @@ vim.lsp.config('pylsp', {
 
 vim.lsp.config('hls', {
   filetypes = { 'haskell', 'lhasekll', 'cabal' },
+  settings = {
+    haskell = {
+      formattingProvider = "fourmolu",
+    }
+  }
 })
 
 vim.lsp.enable({
+  'bashls',
+  'clangd',
+  'golangci_lint_ls',
+  'gopls',
+  'hls',
   'lua_ls',
+  'marksman',
   'pylsp',
   'ruff',
-  'marksman',
   'rumdl',
-  'harper_ls',
-  'bashls',
-  'hls',
-  'gopls',
-  'golangci_lint_ls',
+  'tinymist',
 })
