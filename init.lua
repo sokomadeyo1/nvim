@@ -27,7 +27,9 @@ Plug('romgrk/barbar.nvim')                        --bufferline
 Plug('goolord/alpha-nvim')                        --start menu
 Plug('Shatur/neovim-session-manager')             --sessions
 Plug('nvim-tree/nvim-tree.lua')                   --file explorer
+Plug('ibhagwan/fzf-lua')                          --fzf
 Plug('nvim-lualine/lualine.nvim')                 --lualine
+Plug('Bekaboo/dropbar.nvim')                      --breadcrumbs
 Plug('L3MON4D3/LuaSnip')                          --snippets
 Plug('rafamadriz/friendly-snippets')              --snippets collection
 -- see ~/.local/share/nvim/plugged/friendly-snippets/snippets
