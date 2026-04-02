@@ -8,6 +8,7 @@ wk.add({
   { "<leader>l", desc = "lint" },
   { "<leader>v", desc = "view" },
   { "<leader>o", desc = "options" },
+  { "<leader>g", desc = "git" },
   { "<leader>h", desc = "hunk actions" },
   { "<leader>hs", desc = "stage hunk" },
   { "<leader>hr", desc = "reset hunk" },

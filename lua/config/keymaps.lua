@@ -19,6 +19,12 @@ map("n", "<leader>Q", ":BufferClose!<CR>", "close buf!")
 map('n', '<leader>sv', ':vsplit<CR>:bnext<CR>', "vertical split")  --ver split + open next buffer
 map('n', '<leader>sh', ':split<CR>:bnext<CR>', "horizontal split") --hor split + open next buffer
 
+-- move focus
+map({ "i", "n", "v", "x" }, "<C-h>", "<C-w><C-h>")
+map({ "i", "n", "v", "x" }, "<C-j>", "<C-w><C-j>")
+map({ "i", "n", "v", "x" }, "<C-k>", "<C-w><C-k>")
+map({ "i", "n", "v", "x" }, "<C-l>", "<C-w><C-l>")
+
 -- buffer position nav + reorder
 map('n', '<AS-h>', '<Cmd>BufferMovePrevious<CR>')
 map('n', '<AS-l>', '<Cmd>BufferMoveNext<CR>')
@@ -34,13 +40,16 @@ map('n', '<A-9>', '<Cmd>BufferGoto 9<CR>')
 map('n', '<A-0>', '<Cmd>BufferLast<CR>')
 map('n', '<A-p>', '<Cmd>BufferPin<CR>')
 
+-- fzf
+map("n", "<C-F>", ":FzfLua live_grep<CR>", "Find")
+map("n", "<leader>f", ":FzfLua files<CR>", "Find files")
+map("n", "<leader>b", ":FzfLua buffers<CR>", "Buffers")
 -- misc
-map("n", "<leader>t", ":NvimTreeFocus<CR>", "Open file explorer")         --open file explorer
-map("n", "<leader>P", ":PlugInstall<CR>", "Install plugins")              --vim-plug
-map("n", "<leader>mv", ":!mv % ", "Rename buffer")                        --move a file to a new dir
-map("n", "<leader>R", ":so ~/.config/nvim/init.lua<CR>", "Reload config") --reload neovim config
--- map("v", "<leader>i", "=gv")                                           --auto indent
-map("n", "<leader>W", ":set wrap!<CR>", "Toggle wrap")                    --toggle wrap
+map("n", "<leader>t", ":NvimTreeFocus<CR>", "Open file explorer")
+map("n", "<leader>P", ":PlugInstall<CR>", "Install plugins")
+map("n", "<leader>R", ":so ~/.config/nvim/init.lua<CR>", "Reload config")
+map("n", "<leader>W", ":set wrap!<CR>", "Toggle wrap")
+map("n", "<leader>gb", ":FzfLua git_branches<CR>", "Branches")
 
 -- decisive csv
 map("n", "<leader>csa", ":lua require('decisive').align_csv({})<cr>", "Align table")
@@ -48,7 +57,7 @@ map("n", "<leader>csA", ":lua require('decisive').align_csv_clear({})<cr>", "Und
 -- map("n", "[c", ":lua require('decisive').align_csv_prev_col()<cr>")
 -- map("n", "]c", ":lua require('decisive').align_csv_next_col()<cr>")
 
-map("n", "<leader>f", vim.lsp.buf.format, 'Format buffer')
+map("n", "<leader><S-F>", vim.lsp.buf.format, 'Format buffer')
 
 -- System clipboard
 map({ "n", "v", "x" }, "<leader>y", '"+y', "Yank to system clipboard")
@@ -71,3 +80,4 @@ map("n", "<leader>lp", ":!pylint %<CR>", "pylint")
 map("n", "<leader><leader>b", ":e ~/Bookmarks<CR>", "bookmarks")
 map("n", "<leader><leader>n", ":e ~/.config/nvim<CR>", "nvim config")
 map("n", "<leader><leader>t", ":e ~/Bookmarks/todo/current.md<CR>", "todo")
+map("n", "<leader><leader>s", ":e ~/.local/share/nvim/plugged/friendly-snippets/snippets<CR>", "snippets")
