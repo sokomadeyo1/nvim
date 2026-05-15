@@ -37,6 +37,7 @@ Plug('windwp/nvim-autopairs')                     --autopairs
 Plug('lewis6991/gitsigns.nvim')                   --git
 Plug('lukas-reineke/virt-column.nvim')            --colorcolumn
 Plug('folke/todo-comments.nvim')                  --todo-comments
+Plug('preservim/nerdcommenter')                   --powerful comments
 Plug('norcalli/nvim-colorizer.lua')               --color highlight
 Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim')             --view csv files
